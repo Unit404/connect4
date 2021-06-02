@@ -5,6 +5,7 @@ const Connect4 = ({rows, cols}) => {
     const [board, setBoard] = useState(new Array(cols).fill(0).map(() => new Array(rows).fill(0)));
     const [levels, setLevels] = useState(new Array(cols).fill(rows-1)); //used to track where in the 
     const [playerTurn, setPlayerTurn] = useState(true);
+    const [finish]
     const findWin = (brd, row, col) =>{
       const check = (a, b, c, d) => {
         return (a!==0 && b===a && c===a && d===a)
