@@ -13,22 +13,19 @@ code {
 }
 
 .cell {
-  /* background-color: grey; */
-  /* width: 100%;
-  height: 16.66666%; */
-  flex-wrap: wrap;
-  display: inline-flex;
   border-radius: 50%;
   float: left;
-  height: 6vw;
-  width: 6vw;
+  height: 100%;
   z-index: 2;
 }
+
 .board {
   background-color: blue;
 
-  width: 42vw;
-  height: 36vw;
+  /* width: 42vw;
+  height: 36vw; */
+  max-width: 55vw;
+  max-height: 55vw;
   margin-left: auto;
   margin-right: auto;
   z-index: 0;
@@ -37,13 +34,5 @@ code {
   background-color: black;
   width: 100%;
   height: 6vw;
-  z-index: 1;
-}
-
-.column {
-  float: left;
-  background-color: black;
-  width: 6vw;
-  height: 100%;
   z-index: 1;
 }

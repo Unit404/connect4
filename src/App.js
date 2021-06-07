@@ -1,7 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-import Board from "./components/Board"
-import { useState } from 'react'
 import Connect4 from './components/Connect4';
 
 function App() {

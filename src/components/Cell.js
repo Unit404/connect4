@@ -1,11 +1,8 @@
-import {useState } from 'react'
 
-const Cell = ({color}) => {
+const Cell = ({color, placeToken, width}) => {
 
     return (
-        <div>
-            <div className='cell' style={{backgroundColor:color}}/>
-        </div>
+        <div className='cell' style={{backgroundColor:color, width:`${width}%`}} onClick={placeToken}/>
     )
 }
 
