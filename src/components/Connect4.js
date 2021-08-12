@@ -7,19 +7,19 @@ const Connect4 = ({rows, cols}) => {
     const [levels, setLevels] = useState(new Array(cols).fill(rows-1)); //used to track where in the column to place a token
     const [playerTurn, setPlayerTurn] = useState(true);
     const [finish, setFinish] = useState(false);
-    const findWin = (brd, row, col) =>{
+    // const findWin = (brd, row, col) =>{
 
-      //The following functions are to be used to check for wins
-      //currently they do nothing
-      const check = (a, b, c, d) => {
-        return (a!==0 && b===a && c===a && d===a)
-      }
-      const checkDR = (r, c) => check(brd[r][c], brd[r+1][c+1], brd[r+2][c+2], brd[r+3][c+3])
-      const checkDL = (r, c) => check(brd[r][c], brd[r+1][c-1], brd[r+2][c-2], brd[r+3][c-3])
-      const checkR = (r, c) => check(brd[r][c], brd[r][c+1], brd[r][c+2], brd[r][c+3])
-      const checkD = (r, c) => check(brd[r][c], brd[r+1][c], brd[r+2][c], brd[r+3][c])
-      return 0
-    }
+    //   //The following functions are to be used to check for wins
+    //   //currently they do nothing
+    //   const check = (a, b, c, d) => {
+    //     return (a!==0 && b===a && c===a && d===a)
+    //   }
+    //   const checkDR = (r, c) => check(brd[r][c], brd[r+1][c+1], brd[r+2][c+2], brd[r+3][c+3])
+    //   const checkDL = (r, c) => check(brd[r][c], brd[r+1][c-1], brd[r+2][c-2], brd[r+3][c-3])
+    //   const checkR = (r, c) => check(brd[r][c], brd[r][c+1], brd[r][c+2], brd[r][c+3])
+    //   const checkD = (r, c) => check(brd[r][c], brd[r+1][c], brd[r+2][c], brd[r+3][c])
+    //   return 0
+    // }
     const placeToken = (row_idx) =>{
         return (col_idx) => {
                 return () =>{
